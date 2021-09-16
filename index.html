@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conway's Game of life</title>
+</head>
+<body>
+    <header>
+        <div class="titlecontainer"> 
+            <h1>Game <br> of <br> Life</h1>
+        </div>
+        <p id="description">
+            A classic game of life emulator. Click on the cell to activate it.You can specify
+            the no of generations to run and the speed(between 1 and 10) of the process. Check out the link to see
+            some pre-defined configurations. 
+            Made in the memory of the late John Conway .. 
+        </p>
+        <div id="side-container">
+            <p id="#speed-label">Speed</p>
+            <input type="text" name="speed" id="speed">
+            <p id="#generation-label">Generations</p>
+            <input type="text" name="generation" id="generation">
+            <a href="#step" id="step-btn">Step</a>
+            <a href="#run" id="run-btn">Run</a>
+        </div>
+    </header>
+    <section id='splash'>
+        <div id="container">
+        </div>        
+    </section>
+    <script src="app.js" async defer></script>
+</body>
+</html>
